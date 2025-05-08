@@ -5,8 +5,6 @@ import sqlite3
 
 
 class RandomFilm:
-    def __init__(self):
-        self.choice = None
 
     def choice(self):
         films = [] # Список для фильмов
@@ -51,5 +49,5 @@ class RandomFilm:
                 else:
                     print("❌Ответ введён некорректно. Ответьте ДА/НЕТ❌")
 
-play = RandomFilm
+play = RandomFilm()
 play.main()
